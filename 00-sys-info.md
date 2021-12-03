@@ -13,6 +13,8 @@
 
 バージョン: 94.0.4606.124（Official Build） （32 ビット）
 
+`chrome://flags/`のページで`Debian version for new Crostini containers`を`Bullseye`に設定すると、Debian 11が使えるようになる。
+
 ## Linuxのバージョン
 
 ```shell
