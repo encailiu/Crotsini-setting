@@ -96,3 +96,22 @@ ghq version 1.2.1 (rev:HEAD)
 ```shell
 $ sudo apt install peco
 ```
+
+## Rust
+
+[公式の方法](https://www.rust-lang.org/tools/install)でインストールする。
+```shell
+$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+インストールが終わったら、`~/.cargo/bin`をPATHに追加
+```shell
+$ rustc --version
+rustc 1.57.0 (f1edd0429 2021-11-29)
+```
+
+よく使うrust製ツールをインストール。
+```shell
+$ cargo install lsd
+$ cargo install bat
+```
