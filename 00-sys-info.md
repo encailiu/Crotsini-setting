@@ -9,7 +9,11 @@
 - 4 GB LPDDR4X (オンボード)
 - 128 GB SSD
 
-## OSのバージョン
+## ChromeOSのバージョン
+
+バージョン: 94.0.4606.124（Official Build） （32 ビット）
+
+## Linuxのバージョン
 
 ```shell
 $ hostnamectl
