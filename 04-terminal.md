@@ -29,6 +29,24 @@ Debian 10の時にあった、日本語入力時に表示位置がずれる問�
 
 ```shell
 sudo apt install tree htop neofetch peco apt-utils
+go get github.com/cheat/cheat/cmd/cheat
+```
+
+`cheat`の初期設定をする。
+
+```shell
+$ cheat
+A config file was not found. Would you like to create one now? [Y/n]: Y
+Would you like to download the community cheatsheets? [Y/n]: Y
+Cloning into '/home/****/.config/cheat/cheatsheets/community'...
+remote: Enumerating objects: 1118, done.
+remote: Counting objects: 100% (379/379), done.
+remote: Compressing objects: 100% (283/283), done.
+remote: Total 1118 (delta 176), reused 206 (delta 96), pack-reused 739
+Receiving objects: 100% (1118/1118), 301.85 KiB | 1.87 MiB/s, done.
+Resolving deltas: 100% (458/458), done.
+Created config file: /home/****/.config/cheat/conf.yml
+Please read this file for advanced configuration information.
 ```
 
 ## よく使うalias、keybind設定等
