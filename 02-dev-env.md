@@ -18,12 +18,14 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).
 ## Python
 
 Python 3.9.2 とかなり新しいバージョンがインストールされている。
-```
+
+```shell
 $ python3 --version
 Python 3.9.2
 ```
 
 pipをインストール
+
 ```shell
 $ sudo apt install python3-pip
 $ pip --version
@@ -31,14 +33,17 @@ pip 20.3.4 from /usr/lib/python3/dist-packages/pip (python 3.9)
 ```
 
 numpy, scipy, matplotlib, ipython, pandas等をインストールする。
+
+```shell
+pip install numpy scipy matplotlib ipython pandas
 ```
-$ pip install numpy scipy matplotlib ipython pandas
-```
+
 ほかは必要な時にインストールすることにする。
 
 ## golang
 
 公式リポジトリにあるgoのバージョンを確認。
+
 ```shell
 $ apt info golang
 Package: golang
@@ -68,6 +73,7 @@ Description: Go programming language compiler - metapackage
 ```
 
 `1.15`とちょっと古いが、とりあえずそれをインストールする。
+
 ```shell
 $ sudo apt install golang
 $ go version
@@ -75,16 +81,19 @@ go version go1.15.9 linux/arm64
 ```
 
 gitリポジトリ管理ツールをインストールする。
-```
-$ go get github.com/x-motemen/ghq
+
+```shell
+go get github.com/x-motemen/ghq
 ```
 
 実行ファイルは`~/go/bin/`にインストールされるので、PATHに追加する
-```bashrc
+
+```bash
 PATH=$PATH:~/go/bin
 ```
 
 PATH追加後に、ghqのバージョンを確認
+
 ```shell
 $ vi ~/.bashrc 
 $ source ~/.bashrc 
@@ -93,27 +102,31 @@ ghq version 1.2.1 (rev:HEAD)
 ```
 
 ついでに、一緒に使用する`peco`をインストールする。
+
 ```shell
-$ sudo apt install peco
+sudo apt install peco
 ```
 
 ## Rust
 
 [公式の方法](https://www.rust-lang.org/tools/install)でインストールする。
+
 ```shell
-$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 インストールが終わったら、`~/.cargo/bin`をPATHに追加
+
 ```shell
 $ rustc --version
 rustc 1.57.0 (f1edd0429 2021-11-29)
 ```
 
 よく使うrust製ツールをインストール。
+
 ```shell
-$ cargo install lsd
-$ cargo install bat
+cargo install lsd
+cargo install bat
 ```
 
 ## git関連ツール
@@ -121,15 +134,17 @@ $ cargo install bat
 ### tig
 
 コンソール上に使うgitブラウザ
+
 ```shell
-$ sudo apt install tig
+sudo apt install tig
 ```
 
 ### gitk
 
 たまにGUIでブランチを確認時に使う
+
 ```shell
-$ sudo apt install gitk
+sudo apt install gitk
 ```
 
 ### git-delta
@@ -137,11 +152,13 @@ $ sudo apt install gitk
 コンソールで差分表示を少しきれいにするツール
 
 rust製、`cargo`でインストール
+
 ```shell
-$ cargo install git-delta
+cargo install git-delta
 ```
 
 インストールが終わったら、`~/.gitconfig`に以下を追加
+
 ```gitconfig
 [core]
     pager = delta
