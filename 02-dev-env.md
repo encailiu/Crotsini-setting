@@ -115,3 +115,28 @@ rustc 1.57.0 (f1edd0429 2021-11-29)
 $ cargo install lsd
 $ cargo install bat
 ```
+
+## git関連ツール
+
+### tig
+
+コンソール上に使うgitブラウザ
+```shell
+$ sudo apt install tig
+```
+
+### gitk
+
+たまにGUIでブランチを確認時に使う
+```shell
+$ sudo apt install gitk
+```
+
+### git-delta
+
+コンソールで差分表示を少しきれいにするツール
+
+rust製、`cargo`でインストール
+```shell
+$ cargo install git-delta
+```
