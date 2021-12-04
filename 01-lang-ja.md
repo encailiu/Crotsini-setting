@@ -2,7 +2,7 @@
 
 以下のページを参考にした。
 
-https://catalyst-wakaba.com/linux-on-chrome-os/#toc1
+[初期設定＆日本語入力を使えるようにする方法｜ChromebookでLinux](https://catalyst-wakaba.com/linux-on-chrome-os/)
 
 ## よく使うutilsをインストール
 
@@ -17,9 +17,9 @@ sudo apt install apt-utils
 ## localeとフォント設定
 
 ```shell
-$ sudo apt install task-japanese locales-all fonts-ipafont -y
-$ sudo localectl set-locale LANG=ja_JP.UTF-8 LANGUAGE="ja_JP:ja"
-$ source /etc/default/locale
+sudo apt install task-japanese locales-all fonts-ipafont -y
+sudo localectl set-locale LANG=ja_JP.UTF-8 LANGUAGE="ja_JP:ja"
+source /etc/default/locale
 ```
 
 設定後に、ターミナルで日本語が表示できるようになる。
@@ -44,21 +44,24 @@ drwx------ 1 ryu-o ryu-o   10 12月  3 22:51 .local
 ## 日本語入力方法インストール
 
 ```shell
-$ sudo apt install fcitx-mozc -y
+sudo apt install fcitx-mozc -y
 ```
 
 ## 環境変数の設定
 
 ```shell
-$ sudo -e /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
+sudo -e /etc/systemd/user/cros-garcon.service.d/cros-garcon-override.conf
 ```
+
 で環境変数設定ファイルを開いて、後ろに以下の4行を追加する。
-```
+
+```conf
 Environment="GTK_IM_MODULE=fcitx"
 Environment="QT_IM_MODULE=fcitx"
 Environment="XMODIFIERS=@im=fcitx"
 Environment="GDK_BACKEND=x11"
 ```
+
 他に、参考ページにあった`自動起動の設定`と`Mozcを追加`の作業をしなくても普通に使えているので、やっていない。
 
 ## Mozcの設定
@@ -66,4 +69,5 @@ Environment="GDK_BACKEND=x11"
 ```shell
 /usr/lib/mozc/mozc_tool --mode=config_dialog
 ```
+
 スペースは常に半角に設定する。
