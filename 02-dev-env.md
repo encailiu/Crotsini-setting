@@ -140,3 +140,13 @@ rust製、`cargo`でインストール
 ```shell
 $ cargo install git-delta
 ```
+
+インストールが終わったら、`~/.gitconfig`に以下を追加
+```gitconfig
+[core]
+    pager = delta
+
+[delta]
+    line-numbers = true
+    side-by-side = true
+```
