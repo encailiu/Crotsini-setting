@@ -21,3 +21,9 @@ OSH_THEME="brainy"
 ## ターミナル
 
 Debian 10の時にあった、日本語入力時に表示位置がずれる問題が改善されていたので、そのまま標準のターミナルを使う。
+
+## よく使用するツール
+
+```shell
+$ sudo apt install tree htop neofetch peco apt-utils
+```
