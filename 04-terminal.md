@@ -27,12 +27,17 @@ Debian 10の時にあった、日本語入力時に表示位置がずれる問�
 
 ## よく使用するツール
 
+- [htop](https://github.com/htop-dev/htop)
+- [peco](https://github.com/peco/peco)
+- [neofetch](https://github.com/dylanaraps/neofetch)
+- [cheat](https://github.com/cheat/cheat)
+
 ```shell
 sudo apt install tree htop neofetch peco apt-utils
 go get github.com/cheat/cheat/cmd/cheat
 ```
 
-`cheat`の初期設定をする。
+[cheat](https://github.com/cheat/cheat)の初期設定をする。
 
 ```shell
 $ cheat
