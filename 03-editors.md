@@ -23,6 +23,7 @@ Run :checkhealth for more info
 ## VSCode
 
 [公式ページ](https://code.visualstudio.com/download#)から、ARM 64のdebファイルをダウンロードしてインストール。
+
 ```shell
-$ sudo apt install ./code_1.62.3-1637136385_arm64.deb
+sudo apt install ./code_1.62.3-1637136385_arm64.deb
 ```

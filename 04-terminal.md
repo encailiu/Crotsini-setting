@@ -7,10 +7,13 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/mast
 ```
 
 [Oh-my-bash Themes](https://github.com/ohmybash/oh-my-bash/wiki/Themes)を参照してテーマだけ好きなものに変更：
+
+```shell
+vi ~/.bashrc
 ```
-$ vi ~/.bashrc
-```
+
 で設定ファイルを開いて、
+
 ```bash
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
@@ -25,8 +28,9 @@ Debian 10の時にあった、日本語入力時に表示位置がずれる問�
 ## よく使用するツール
 
 ```shell
-$ sudo apt install tree htop neofetch peco apt-utils
+sudo apt install tree htop neofetch peco apt-utils
 ```
+
 ## よく使うalias、keybind設定等
 
 ```bash
