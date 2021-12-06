@@ -67,8 +67,7 @@ Plugin 'lambdalisue/fern.vim'    " tree viewer
 Plugin 'ervandew/supertab'       " tabで補完
 Plugin 'lambdalisue/fern.vim'    " tree viewer
 Plugin 'preservim/nerdcommenter' " blockコメント
-```vimrc
-
+```
 
 ## neovim
 
