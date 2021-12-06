@@ -1,5 +1,75 @@
 # テキストエディタ
 
+## vim
+
+### プラグインマネージャ
+
+[Vundle](https://github.com/VundleVim/Vundle.vim)を使用。
+
+プラグインマネージャを取得：
+
+```shell
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+`.vimrc`でVundleを設定
+
+```vimrc
+""" プラグインマネージャーVundle                                                                                                                   
+set nocompatible
+filetype off 
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+" 導入したいプラグインを以下に列挙
+" Plugin '[Github Author]/[Github repo]' の形式で記入
+Plugin 'ervandew/supertab'       " tabで補完
+
+call vundle#end()
+"filetype plugin indent on
+filetype plugin on
+
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+
+""" その他カスタマイズ設定は以下に記載す
+```
+
+### ファイラー
+
+VIMプラグイン[Fern](https://github.com/lambdalisue/fern.vim)を使う
+
+`.vimrc`の『導入したいプラグイン』に`Plugin 'lambdalisue/fern.vim'`を追加して`:PluginInstall`でインストールする。
+
+```vimrc
+" 導入したいプラグインを以下に列挙
+" Plugin '[Github Author]/[Github repo]' の形式で記入
+Plugin 'ervandew/supertab'       " tabで補完
+Plugin 'lambdalisue/fern.vim'    " tree viewer
+```
+
+### ブロックコメント
+
+[NERD Commenter](https://github.com/preservim/nerdcommenter)を使う。
+
+『導入したいプラグイン』の所に`Plugin 'preservim/nerdcommenter'`を追加して、`:PluginInstall`でインストールする。
+
+```vimrc
+" 導入したいプラグインを以下に列挙
+" Plugin '[Github Author]/[Github repo]' の形式で記入
+Plugin 'ervandew/supertab'       " tabで補完
+Plugin 'lambdalisue/fern.vim'    " tree viewer
+Plugin 'preservim/nerdcommenter' " blockコメント
+```vimrc
+
+
 ## neovim
 
 **インストールしたが、とりあえずVIMで困っていないので、しばらくVIMを使うようにする。**
