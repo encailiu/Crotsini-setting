@@ -2,6 +2,8 @@
 
 ## neovim
 
+**インストールしたが、とりあえずVIMで困っていないので、しばらくVIMを使うようにする。**
+
 ```shell
 $ sudo apt install neovim
 $ nvim --version
