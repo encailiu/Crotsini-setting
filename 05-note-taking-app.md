@@ -48,3 +48,5 @@ error: ldconfig failed, exit status 256
 
 と怒られた。
 
+https://www.reddit.com/r/Crostini/comments/qj610m/flatpak_broken_on_version_960466425_official/
+によると、Debian 11コンテナだけの問題らしい。Debian 10にしたら治るみたいだけど、しばらく待ってみるか？
