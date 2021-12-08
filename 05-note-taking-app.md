@@ -37,3 +37,14 @@ flatpak install flathub md.obsidian.Obsidian
 ```shell
 flatpak run md.obsidian.Obsidian
 ```
+
+実行すると、
+
+```shell
+$ flatpak run md.obsidian.Obsidian
+bwrap: Can't mount proc on /newroot/proc: Operation not permitted
+error: ldconfig failed, exit status 256
+```
+
+と怒られた。
+
