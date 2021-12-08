@@ -59,3 +59,5 @@ https://www.reddit.com/r/Crostini/comments/r9gmp0/flatpak_broken_on_chrome_96046
 4. chromebookを再起動
 
 再起動後に`Obsidian`が実行できるようになった。
+
+が、日本語入力は動かない！
