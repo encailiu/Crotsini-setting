@@ -49,4 +49,13 @@ error: ldconfig failed, exit status 256
 と怒られた。
 
 https://www.reddit.com/r/Crostini/comments/qj610m/flatpak_broken_on_version_960466425_official/
-によると、Debian 11コンテナだけの問題らしい。Debian 10にしたら治るみたいだけど、しばらく待ってみるか？
+によると、Debian 11コンテナだけの問題らしい。
+
+https://www.reddit.com/r/Crostini/comments/r9gmp0/flatpak_broken_on_chrome_960466477/ に対策があったので、以下を実施。
+
+1. `Ctrl+Alt+T`でcroshのターミナルを開く
+2. `vsh termina`を実行
+3. 次に`lxc config set penguin security.nesting true`を実行する。
+4. chromebookを再起動
+
+再起動後に`Obsidian`が実行できるようになった。
