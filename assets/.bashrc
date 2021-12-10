@@ -121,13 +121,7 @@ alias ll="lsd -al"
 
 # git
 function grl() {
-  local selected_file=$(ghq list --full-path | peco --query "$LBUFFER")
-  if [ -n "$selected_file" ]; then
-    if [ -t 1 ]; then
-      echo ${selected_file}
-      cd ${selected_file}
-    fi
-  fi
+    cd $(ghq list -p | peco)
 }
 bind -x '"\C-g": grl'
 
