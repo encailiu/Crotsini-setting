@@ -1,0 +1,14 @@
+[user]
+    email = encai.liu@gmail.com
+    name = Encai Liu
+
+[pull]
+    rebase = false
+
+[core]
+    pager = delta
+
+[delta]
+    line-numbers = true
+    side-by-side = true
+
